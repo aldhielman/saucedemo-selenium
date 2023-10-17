@@ -1,6 +1,6 @@
 Feature: Cart functionality
 
-  Scenario: Add/Remove item to cart correctly
+  Scenario: Add/Remove cart item correctly
     Given user login as standard_user
     Given cart item is empty
     When user click 'add to cart' button on item

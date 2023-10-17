@@ -84,12 +84,10 @@ public class LoginStepDefinition {
         Assertions.assertEquals("https://www.saucedemo.com/",currentUrl);
     }
 
-//    @After
-//    public void tearDown(){
-//        System.out.println("TEARDOWN LOGIN");
-//        driver.quit();
-//        driver.close();
-//        driver = null;
-//    }
+    @Then("user is redirected inventory page")
+    public void user_is_redirected_inventory_page() {
+        String currentUrl = driver.getCurrentUrl();
+        Assertions.assertEquals("https://www.sacedemo.com/inventory.html",currentUrl);
+    }
 
 }

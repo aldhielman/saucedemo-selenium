@@ -41,13 +41,10 @@ public class InventoryStepDefinition {
         Assertions.assertEquals("ITEM NOT FOUND",inventoryName);
     }
 
-//    @After
-//    public void tearDown(){
-//        System.out.println("TEARDOWN INVENTORY");
-//        driver.quit();
-//        driver.close();
-//        driver = null;
-//    }
-
+    @Then("user get correct inventory-item page")
+    public void user_get_correct_inventory_item_page() {
+        String title = driver.findElement(By.xpath("//div[@class='inventory_details_name large_size']")).getText();
+        Assertions.assertEquals("Sauce Labs Backpack",title);
+    }
 
 }

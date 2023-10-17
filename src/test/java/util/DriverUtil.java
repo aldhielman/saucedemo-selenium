@@ -12,7 +12,6 @@ public class DriverUtil {
 
     public static WebDriver getDriver(){
         if(driver == null){
-            System.out.println("NEW BROWSER");
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -22,7 +21,6 @@ public class DriverUtil {
     }
 
     public static void closeBrowser(){
-        System.out.println("CLOSE BROWSER");
         driver.quit();
         driver = null;
     }

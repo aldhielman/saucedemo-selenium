@@ -17,6 +17,11 @@ Feature: Login functionality
     Given user login as standard_user
     Then user on inventory page
 
+  Scenario: Logged user cannot login again
+    Given user login as standard_user
+    When user is on SwagLabs login page
+    Then user is redirected inventory page
+
   Scenario Outline: Access protected page without authentication
     Given user on protected page <page>
     Then user is redirected to SwagLabs login page

@@ -62,19 +62,4 @@ public class CartStepDefinition {
 
     }
 
-//    @Before()
-//    public void setup(){
-//        System.out.println("BEFORE");
-//        WebDriverManager.chromedriver().setup();
-//
-//        driver = new ChromeDriver();
-//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-//        driver.manage().window().maximize();
-//
-//        driver.get(baseUrl);
-//        driver.findElement(By.id("user-name")).sendKeys("standard_user");
-//        driver.findElement(By.id("password")).sendKeys("secret_sauce");
-//        driver.findElement(By.id("login-button")).click();
-//    }
-
 }
